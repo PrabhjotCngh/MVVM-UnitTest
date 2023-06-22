@@ -111,12 +111,9 @@
 			children = (
 				8D0B60222A02A064002D28C0 /* AppDelegate.swift */,
 				8D0B60242A02A064002D28C0 /* SceneDelegate.swift */,
-				8D0B60262A02A064002D28C0 /* ViewController.swift */,
-				8D0B60522A02A0E1002D28C0 /* ViewControllerViewModel.swift */,
-				8D0B60542A02A101002D28C0 /* ViewControllerModel.swift */,
-				8D0B60562A02A132002D28C0 /* NetworkManager.swift */,
-				8D0B60582A02A45F002D28C0 /* Utility.swift */,
-				8D0B605A2A040D6B002D28C0 /* APIResponse.json */,
+				8DDDCBC12A40CD9F0025FE2B /* ViewController */,
+				8DDDCBBF2A40CD750025FE2B /* Services */,
+				8DDDCBC02A40CD7F0025FE2B /* Utility */,
 				8D0B60282A02A064002D28C0 /* Main.storyboard */,
 				8D0B602B2A02A068002D28C0 /* Assets.xcassets */,
 				8D0B602D2A02A068002D28C0 /* LaunchScreen.storyboard */,
@@ -140,6 +137,57 @@
 				8D0B60452A02A068002D28C0 /* MVVM_UnitTestUITestsLaunchTests.swift */,
 			);
 			path = "MVVM&UnitTestUITests";
+			sourceTree = "<group>";
+		};
+		8DDDCBBF2A40CD750025FE2B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B60562A02A132002D28C0 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DDDCBC02A40CD7F0025FE2B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B60582A02A45F002D28C0 /* Utility.swift */,
+				8D0B605A2A040D6B002D28C0 /* APIResponse.json */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8DDDCBC12A40CD9F0025FE2B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8DDDCBC22A40CDB90025FE2B /* View */,
+				8DDDCBC32A40CDC00025FE2B /* ViewModel */,
+				8DDDCBC42A40CDC80025FE2B /* Model */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8DDDCBC22A40CDB90025FE2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B60262A02A064002D28C0 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8DDDCBC32A40CDC00025FE2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B60522A02A0E1002D28C0 /* ViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8DDDCBC42A40CDC80025FE2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D0B60542A02A101002D28C0 /* ViewControllerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
