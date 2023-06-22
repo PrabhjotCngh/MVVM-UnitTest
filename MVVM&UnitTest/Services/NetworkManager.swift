@@ -25,6 +25,7 @@ struct NetworkManager: NetworkRequestProtocol {
         self.session = session
     }
     
+    //MARK: - Completion handler method implementation
     func makeAPIRequest(completionHandler: @escaping Handler) {
         guard let url = URL(string: APIConstants.apiUrl) else {
             completionHandler(.failure(NetworkError.badURL))
