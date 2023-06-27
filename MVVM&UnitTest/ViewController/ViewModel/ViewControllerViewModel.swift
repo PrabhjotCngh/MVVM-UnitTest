@@ -24,9 +24,9 @@ class ViewControllerViewModel {
                 case .success(let response):
                     _weakSelf.apiResponseModel = response.sources
                     _weakSelf.requestSucceeded()
-                case .failure(NetworkError.badURL):
+                case .failure(NetworkError.invalidURL):
                     _weakSelf.requestFailed("Incorrect url!")
-                case .failure(NetworkError.noData):
+                case .failure(NetworkError.invalidData):
                     _weakSelf.requestFailed("Response data is empty!")
                 case .failure(NetworkError.decodingError(let error)), .failure(NetworkError.apiError(let error)):
                     _weakSelf.requestFailed(error.localizedDescription)
