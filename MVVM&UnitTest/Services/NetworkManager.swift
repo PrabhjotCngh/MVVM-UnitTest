@@ -59,7 +59,7 @@ struct NetworkManager: NetworkRequestProtocol {
     }
     
     //MARK: - async/await method implementation
-    func request(url: String) async throws -> Result<Model, NetworkError> {
+    func request() async throws -> Result<Model, NetworkError> {
         guard let url = URL(string: APIConstants.apiUrl) else {
             throw NetworkError.invalidURL
         }
