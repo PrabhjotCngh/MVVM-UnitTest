@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        viewModel.getData()
+        viewModel.fetchData()
         callbackHandler()
     }
 }
@@ -24,9 +24,9 @@ extension ViewController {
     func callbackHandler() {
         viewModel.requestSucceeded = { [weak self] in
             if let _weakSelf = self {
-                DispatchQueue.main.async {
+                //DispatchQueue.main.async {
                     _weakSelf.tvTableView.reloadData()
-                }
+                //}
             }
         }
         
